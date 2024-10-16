@@ -1,0 +1,20 @@
+input {
+    padding: 10px;
+    border: 1px solid burlywood;
+}
+button{
+    background-color: rgb(157, 249, 190);
+
+}   
+.message,table {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+#submit:hover {
+    background-color: rgb(34, 172, 7);
+}
+
+
+

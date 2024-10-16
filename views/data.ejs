@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    
+    <title>Data Base</title>
+</head>
+<body>
+    <div class="table" >
+        <%  if (locals.allurl) { %>
+            <table border="5px" style="background-color: aqua;">
+            <thead style="background-color: burlywood;">
+                
+                <th>SL-NO.</th>
+                <th>ShortID</th>
+                <th>Redirect</th>
+                <th style="background-color:darkgreen">Clicks</th>
+                <th style="background-color:rgb(131, 94, 15)"> created by</th>
+                <th style="background-color:rgb(31, 46, 158)"> username</th>
+            
+            </thead>
+            
+            <tbody>
+                <% allurl.forEach((allurl,index )=> { %>
+                <tr>
+                 <td><%= index +1 %></td>
+                 <td><%= allurl.ShortID %></td>
+                 <td><%= allurl.redirectUrl %></td>
+                 <td style="background-color:rgb(138, 173, 48)"><%= allurl.visitHistroy.length %></td>
+                 <td><%= allurl.createdBy %></td>
+                 <td><%= allurl.nameofcreator %></td>
+                </tr> 
+                <% }) %>
+            </tbody>
+    
+         <%   }  %>
+        </table>
+       </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Home Page</title>
+</head>
+<body>
+   
+    <div class="form" align="center">
+        <h1>URL Shortner</h1>
+        <form method="post" action="/url">
+            <label>Enter Original Url:</label>
+            <input type="text" name="url" placeholder="https://www.google.com">
+            <button type="submit" id="submit">Generate URL</button>
+           </form>
+
+           <% if(locals.id) { %>
+            <p>Generated URl::http://localhost:5000/url/<%=id%> </p>
+            <p><a href="http://localhost:5000/url/<%=id%>">click me</a> </p>
+            <%   }  %>
+
+    </div> 
+</body>
+</html>
