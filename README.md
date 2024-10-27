@@ -19,7 +19,7 @@
   
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack.
 
 - **Node.js**: Server-side JavaScript runtime environment.
 - **Express.js**: Minimal and flexible Node.js web application framework.
